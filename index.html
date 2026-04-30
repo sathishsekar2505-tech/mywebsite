@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MyWebsite</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Welcome</p>
+      <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+      <p class="hero-sub">Web Developer · Designer · Creator</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar">😎</div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="icon">🎯</span>
+        <h3>Who I Am</h3>
+        <p>I am a passionate web developer who loves building beautiful and functional websites.</p>
+      </div>
+      <div class="about-card">
+        <span class="icon">💡</span>
+        <h3>What I Do</h3>
+        <p>I create responsive websites using HTML, CSS, and JavaScript with clean, modern designs.</p>
+      </div>
+      <div class="about-card">
+        <span class="icon">🚀</span>
+        <h3>My Goal</h3>
+        <p>To deliver high-quality web experiences that make users happy and businesses grow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section section-dark" id="skills">
+    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <span>HTML</span>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>CSS</span>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>JavaScript</span>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>React</span>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+    <div class="contact-box">
+      <input type="text" id="nameInput" placeholder="Your Name" />
+      <input type="email" id="emailInput" placeholder="Your Email" />
+      <textarea id="msgInput" placeholder="Your Message" rows="4"></textarea>
+      <button class="btn btn-primary" onclick="sendMessage()">Send Message 🚀</button>
+      <p id="formMsg" class="form-msg"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Made with ❤️ by <strong>Your Name</strong> · 2026</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
